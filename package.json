@@ -39,6 +39,7 @@
     "karma-sourcemap-loader": "0.3.6",
     "karma-webpack": "1.7.0",
     "loom": "3.1.2",
+    "originate": "0.1.x",
     "minimist": "1.2.0",
     "mocha": "2.3.3",
     "node-sass": "3.3.3",
