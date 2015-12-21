@@ -42,7 +42,7 @@
     "react": "0.14.0",
     "rf-release": "mzabriskie/rf-release",
     "sass-loader": "^3.1.2",
-    "webpack": "1.12.2",
+    "webpack": "1.12.6",
     "webpack-dev-server": "1.12.0"
   }
 }
