@@ -39,9 +39,9 @@
     "loom": "3.1.2",
     "minimist": "1.2.0",
     "mocha": "2.3.3",
+    "node-sass": "^3.4.2",
     "react": "0.14.0",
     "rf-release": "mzabriskie/rf-release",
-    "sass-loader": "^3.1.2",
     "webpack": "1.12.6",
     "webpack-dev-server": "1.14.0"
   }
