@@ -37,6 +37,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: path.resolve(process.env.RACKT_PATH, 'node_modules/babel-loader')
+      },{
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loader: path.resolve(process.env.RACKT_PATH, 'node_modules/sass-loader')
       }
     ]
   },
