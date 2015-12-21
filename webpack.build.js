@@ -6,7 +6,7 @@ var COMPONENT_NAME = process.env.COMPONENT_NAME;
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var plugins = [];
 
-plugins.push(new ExtractTextPlugin(COMPONENT_FILE + '.css', {
+plugins.push(new ExtractTextPlugin(path.resolve(BASE_DIR, 'dist/' + COMPONENT_FILE + '.css'), {
     allChunks: true
 }));
 
@@ -39,9 +39,9 @@ module.exports = {
             exclude: /node_modules/,
             loader: path.resolve(process.env.RACKT_PATH, 'node_modules/babel-loader')
         }, {
-            test: /\.js$/,
+            test: /\.scss$/,
             exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract(process.env.RACKT_PATH,"node_modules/style-loader"),path.resolve(process.env.RACKT_PATH,"node_modules/css-loader") + '!' + path.resolve(process.env.RACKT_PATH,"node_modules/sass-loader"))
+            loader: ExtractTextPlugin.extract(path.resolve(process.env.RACKT_PATH,"node_modules/style-loader"),path.resolve(process.env.RACKT_PATH,"node_modules/css-loader") + '!' + path.resolve(process.env.RACKT_PATH,"node_modules/sass-loader"))
         }]
     },
     plugins: plugins
