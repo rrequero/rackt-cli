@@ -5,6 +5,10 @@ var COMPONENT_FILE = process.env.COMPONENT_FILE;
 var COMPONENT_NAME = process.env.COMPONENT_NAME;
 var plugins = [];
 
+plugins.push(new ExtractTextPlugin(COMPONENT_FILE+'.css', {
+            allChunks: true
+}));
+
 function getPackageMain() {
   return require(path.resolve(BASE_DIR, 'package.json')).main;
 }
