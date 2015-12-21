@@ -40,7 +40,7 @@ module.exports = {
       },{
         test: /\.scss$/,
         exclude: /node_modules/,
-        loader: path.resolve(process.env.RACKT_PATH, 'node_modules/css-loader') + '!' + path.resolve(process.env.RACKT_PATH, 'node_modules/sass-loader')
+        loader: path.resolve(process.env.RACKT_PATH, 'node_modules/style-loader') + '!' + path.resolve(process.env.RACKT_PATH, 'node_modules/css-loader') + '!' + path.resolve(process.env.RACKT_PATH, 'node_modules/sass-loader')
       }
     ]
   },
