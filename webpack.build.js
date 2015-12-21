@@ -41,7 +41,7 @@ module.exports = {
         }, {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract("style",path.resolve(process.env.RACKT_PATH,"node_modules/css-loader") + '!' + path.resolve(process.env.RACKT_PATH,"node_modules/sass-loader"))
+            loader: ExtractTextPlugin.extract(process.env.RACKT_PATH,"node_modules/style-loader"),path.resolve(process.env.RACKT_PATH,"node_modules/css-loader") + '!' + path.resolve(process.env.RACKT_PATH,"node_modules/sass-loader"))
         }]
     },
     plugins: plugins
